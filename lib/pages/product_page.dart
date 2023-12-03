@@ -22,7 +22,7 @@ class ProductPage extends StatelessWidget {
         margin: const EdgeInsets.fromLTRB(40, 40, 40, 50),
         // padding: const EdgeInsets.fromLTRB(30, 30, 30, 30),
         width: 300,
-        height: 430,
+        height: 480,
         decoration: BoxDecoration(
           color: Colors.cyan[100],
           borderRadius: BorderRadius.circular(30),
@@ -51,7 +51,7 @@ class ProductPage extends StatelessWidget {
             Container(
               padding: EdgeInsets.only(left: 30),
               child: Text(
-                'Name',
+                'Pepperoni Pizza',
                 style: Theme.of(context).textTheme.titleMedium!.copyWith(
                       fontSize: 22,
                       fontWeight: FontWeight.w400,
@@ -59,20 +59,20 @@ class ProductPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 15,
             ),
             Container(
               padding: EdgeInsets.only(left: 30),
               child: Text(
-                'description',
+                'The combination of pepperoni, tomato sauce and cheese creates an amazing sensation unlike anything else',
                 style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.w300,
                     ),
               ),
             ),
             const SizedBox(
-              height: 35,
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

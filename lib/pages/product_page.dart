@@ -22,7 +22,7 @@ class ProductPage extends StatelessWidget {
         margin: const EdgeInsets.fromLTRB(40, 40, 40, 50),
         // padding: const EdgeInsets.fromLTRB(30, 30, 30, 30),
         width: 300,
-        height: 480,
+        height: 515,
         decoration: BoxDecoration(
           color: Colors.cyan[100],
           borderRadius: BorderRadius.circular(30),
@@ -46,7 +46,7 @@ class ProductPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 15,
+              height: 10,
             ),
             Container(
               padding: EdgeInsets.only(left: 30),
@@ -72,6 +72,33 @@ class ProductPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
+              height: 15,
+            ),
+            Container(
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(
+                    'Price : ',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 2,
+                  ),
+                  Text(
+                    '\$280',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
               height: 25,
             ),
             Row(
@@ -79,13 +106,13 @@ class ProductPage extends StatelessWidget {
               children: [
                 MyButton(
                     onTap: () => Navigator.pushNamed(context, '/buy_page'),
-                    child: Text(
+                    child: const Text(
                       "Buy Now",
-                      style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 15,
-                          ),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 15,
+                      ),
                     )),
               ],
             )

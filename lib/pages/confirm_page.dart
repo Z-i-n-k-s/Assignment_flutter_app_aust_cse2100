@@ -48,7 +48,7 @@ class MyPayment extends StatelessWidget {
                   child: const Text(
                     "Go Back",
                     style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 24, 23, 23),
                       fontWeight: FontWeight.w500,
                       fontSize: 26,
                     ),

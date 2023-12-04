@@ -1,4 +1,4 @@
-import 'package:assignment_app/buttuon.dart';
+import 'package:assignment_app/components/buttuon.dart';
 import 'package:flutter/material.dart';
 
 class ProductPage extends StatelessWidget {
@@ -105,15 +105,16 @@ class ProductPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                    onTap: () => Navigator.pushNamed(context, '/buy_page'),
-                    child: const Text(
-                      "Buy Now",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 15,
-                      ),
-                    )),
+                  onTap: () => Navigator.pushNamed(context, '/buy_page'),
+                  child: const Text(
+                    "Buy Now",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
               ],
             )
           ],

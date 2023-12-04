@@ -1,4 +1,5 @@
 import 'package:assignment_app/pages/buy_page.dart';
+import 'package:assignment_app/pages/confirm_page.dart';
 import 'package:assignment_app/pages/product_page.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/product_page': (context) => const ProductPage(),
         '/buy_page': (context) => const BuyPage(),
+        '/confirm_page': (context) => const MyPayment(),
       },
     );
   }
